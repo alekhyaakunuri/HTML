@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="row mt-3">
+        <div class="col-lg-3">
+            <h3>Image </h3>
+            <img src="C:\Users\Dell\Desktop\html\smiley.jpg" style="width: 100px;height: 100px;" />
+        </div>
+        <div class="col-lg-2">
+            <h3>Product Name</h3>
+            <p style="font-size: large;" id="title">SmileyLocket</p>
+        </div>
+        <div class="col-lg-2">
+            <h3>Price </h3>
+            <input type="tel" id="price" value="150" />
+        </div>
+        <div class="col-lg-3">
+            <h3>Quantity</h3>
+            <button id="b1" type="button" onclick="dec()">-</button>
+            <input type="tel" id="num" value="1" />
+            <input type="button" id="b2" value="+" onclick="inc()">
+
+        </div>
+        <div class="col-lg-2">
+            <h3>Total Price</h3>
+            <input type="tel" id="total" />
+        </div>
+
+    </div>
+
+
+    <script>
+        var counter = parseInt(document.getElementById("num").value);
+        var pr = parseInt(document.getElementById("price").value);
+        document.getElementById("total").value = pr;
+        function inc() {
+            document.getElementById("b1").disabled = false;
+            counter = counter + 1;
+            document.getElementById("num").value = counter;
+            var tot = counter * pr;
+            document.getElementById("total").value = tot;
+
+        }
+        function dec() {
+
+            counter--;
+            document.getElementById("num").value = counter;
+            var tot = counter * pr;
+            document.getElementById("total").value = tot;
+            if (counter == 0) {
+                document.getElementById("b1").disabled = true;
+            }
+
+
+
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.basic-btn, .btn {
+  background-color: #f98866;
+  color: white;
+  width: 100%;
+}
+
+.btn {
+  padding: 20px;
+}
+
+h1 {
+  color: red;
+  font-size: 20px;
+}
+
+body {
+  background-color: gold;
+}
+
+body #p1 {
+  color: chocolate;
+}
+
+body #p2 {
+  color: #ff420e;
+}
+
+body .para {
+  color: #80dd9e;
+}
+/*# sourceMappingURL=main.css.map */

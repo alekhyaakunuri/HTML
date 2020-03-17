@@ -1,0 +1,37 @@
+@import "base";
+$text-color:red;
+$text-size:20px;
+$test:3;
+
+//Function(Directive)
+@function applyColor($color-name){
+    @return map-get($colors, $color-name );
+}
+.basic-btn{
+    background-color: #f98866;
+    color:white;
+    width:100%;
+}
+.btn{
+    @extend .basic-btn;
+    padding:20px;
+}
+
+h1{
+    color: $text-color;
+    font-size: $text-size;
+}
+body{
+    background-color:gold;
+
+#p1{
+    color:chocolate;
+}
+#p2{
+    color:map-get($colors , poppy);
+}
+.para{
+    color: applyColor(stem);
+}
+
+

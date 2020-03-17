@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,SAAS,EAAE,KAAK;CACnB;;AACD,AAAA,EAAE,CAAA;EACE,MAAM,EAAC,SAAS;CACnB",
+    "sources": [
+        "profitoro.scss"
+    ],
+    "names": [],
+    "file": "profitoro.css"
+}

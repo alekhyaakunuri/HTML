@@ -1,0 +1,29 @@
+
+<html>
+<head>example</head>
+<body>
+    <p id='p1'>some thing that need to be styled</p>
+    <form onsubmit="validateUser()">
+        <input type="text" id="username" placeholder="username">
+        <input type="password" id="password" placeholder="username">
+         <button>Submit</button>
+
+    <script>
+        function validateUser(){
+            var uname=document.querySelector("#username");
+            var u=document.querySelector("#password");
+            if(uname=="testuser"&&u=="Alli@23#"){
+         return alert("valid login");
+            }
+            else{
+         return alert("invalid login");
+            }
+          
+
+
+        }
+    </script>
+    </form>
+
+</body>
+</html>

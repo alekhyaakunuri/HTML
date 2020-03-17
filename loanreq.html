@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loan request ID</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
+        <img src="C:\Users\Dell\Desktop\html\bank.png" style="width:0px height: 0px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="loginex.html" style="font-size: 50px;">LOGIN</a>
+            <a class="nav-item nav-link" href="registerex.html" style="font-size: 50px;">REGISTER</a>
+            <a class="nav-item nav-link" href="loanreq.html" style="font-size: 50px;">LOAN REQUEST</a>
+            <a class="nav-item nav-link" href="emi.html" style="font-size: 50px;">EMICALCULATOR</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+            <form class="border border-primary rounded p-3 mt-4 p-3 mb-2 bg-warning text-white" onsubmit="submitForm()"> 
+                <div class="form-group">
+                    <h4 class="text-center"> Loan Request Form</h4>
+
+                    <label for="exampleInputFirstname">FirstName</label>
+                    <input type="text" class="form-control" id="exampleInputFirstname" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputLastname">LastName</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" required>
+                  </div>
+                <div class="form-group">  
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputContact">Mobile NUmber</label>
+                  <input type="text" class="form-control" id="exampleInputContact" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputAdress">Address</label>
+                    <input type="textarea" class="form-control" id="exampleInputAddress" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputInstitute">Name Of The Institute</label>
+                    <input type="text" class="form-control" id="exampleInputInstitute" required>
+                  </div>
+
+                <div class="form-group">
+                    <label for="exampleInputIncome">Family Anual Income</label>
+                    <input type="text" class="form-control" id="exampleInputIncome" required> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputAmount">Requested Loan Amount</label>
+                    <input type="text" class="form-control" id="exampleInputAmount" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputDuration">Re-pay Duration(in months)</label>
+                    <input type="text" class="form-control" id="exampleInputDuration" required> 
+                  </div>
+
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Apply</button>
+              </form>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+      <script>
+          function submitForm()
+          {
+            var name = document.getElementById("exampleInputFirstname").value;
+          var r=Math.floor(100000000+Math.random()*90000000);
+
+              alert(name+" you  are request for loan sucessfully applied and u r ID is "+r);
+          }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+    
+</body>
+</html>
